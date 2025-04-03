@@ -1,28 +1,28 @@
 package edu.kis.vh.nursery.factory;
 
-import edu.kis.vh.nursery.defaultCountingOutRhymer;
+import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 import edu.kis.vh.nursery.FirstInFirstOutRhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
 
 public class DefaultRhymersFactory implements Rhymersfactory {
 
     @Override
-    public defaultCountingOutRhymer GetStandardRhymer() {
-        return new defaultCountingOutRhymer();
+    public DefaultCountingOutRhymer GetStandardRhymer() {
+        return new DefaultCountingOutRhymer();
     }
 
     @Override
-    public defaultCountingOutRhymer GetFalseRhymer() {
-        return new defaultCountingOutRhymer();
+    public DefaultCountingOutRhymer GetFalseRhymer() {
+        return new DefaultCountingOutRhymer();
     }
 
     @Override
-    public defaultCountingOutRhymer GetFIFORhymer() {
+    public DefaultCountingOutRhymer GetFIFORhymer() {
         return new FirstInFirstOutRhymer();
     }
 
     @Override
-    public defaultCountingOutRhymer GetHanoiRhymer() {
+    public DefaultCountingOutRhymer GetHanoiRhymer() {
         return new HanoiRhymer();
     }
 
