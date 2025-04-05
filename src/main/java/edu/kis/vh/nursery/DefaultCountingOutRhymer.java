@@ -24,13 +24,13 @@ public class DefaultCountingOutRhymer {
 
     protected int peekTop() {
         if (isEmpty())
-            return -1;
+            return -DEFAULT_VALUE;
         return numbers[total];
     }
 
     public int countOut() {
         if (isEmpty())
-            return -1;
+            return -DEFAULT_VALUE;
         return numbers[total--];
     }
 
