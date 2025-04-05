@@ -22,6 +22,7 @@ class RhymersDemo {
         java.util.Random rn = new java.util.Random();
         for (int i = 1; i < COUNTER; i++)
             rhymers[3].countIn(rn.nextInt(BOUND));
+
         
         for (int i = 0; i < rhymers.length; i++) {
             while (!rhymers[i].isEmpty())
