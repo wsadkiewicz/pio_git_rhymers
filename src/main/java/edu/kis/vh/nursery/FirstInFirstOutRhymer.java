@@ -16,4 +16,8 @@ public class FirstInFirstOutRhymer extends DefaultCountingOutRhymer {
 
         return ret;
     }
+
+    public DefaultCountingOutRhymer getTemp() {
+        return temp;
+    }
 }
