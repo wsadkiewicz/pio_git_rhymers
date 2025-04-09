@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 public class FirstInFirstOutRhymer extends DefaultCountingOutRhymer {
 
-    public final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+    private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
     @Override
     public int countOut() {
@@ -15,5 +15,9 @@ public class FirstInFirstOutRhymer extends DefaultCountingOutRhymer {
             countIn(temp.countOut());
 
         return ret;
+    }
+
+    public DefaultCountingOutRhymer getTemp() {
+        return temp;
     }
 }

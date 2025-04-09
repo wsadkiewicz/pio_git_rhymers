@@ -5,9 +5,9 @@ import edu.kis.vh.nursery.factory.Rhymersfactory;
 
 class RhymersDemo {
 
-    public static final int COUNTER = 15;
-    public static final int RHYMERS = 3;
-    public static final int BOUND = 20;
+    private static final int COUNTER = 15;
+    private static final int RHYMERS = 3;
+    private static final int BOUND = 20;
 
     public static void main(String[] args) {
         Rhymersfactory factory = new DefaultRhymersFactory();
@@ -34,5 +34,16 @@ class RhymersDemo {
                 + ((HanoiRhymer) rhymers[RHYMERS]).reportRejected());
         
     }
-    
+
+    public static int getCOUNTER() {
+        return COUNTER;
+    }
+
+    public static int getRHYMERS() {
+        return RHYMERS;
+    }
+
+    public static int getBOUND() {
+        return BOUND;
+    }
 }
