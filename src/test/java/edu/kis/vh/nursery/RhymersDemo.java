@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
+// Projekt jest poprawny, wszystkie testy przechodzą pomyślnie.
 class RhymersDemo {
 
     private static final int COUNTER = 15;
