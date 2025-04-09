@@ -34,5 +34,16 @@ class RhymersDemo {
                 + ((HanoiRhymer) rhymers[RHYMERS]).reportRejected());
         
     }
-    
+
+    public static int getCOUNTER() {
+        return COUNTER;
+    }
+
+    public static int getRHYMERS() {
+        return RHYMERS;
+    }
+
+    public static int getBOUND() {
+        return BOUND;
+    }
 }
